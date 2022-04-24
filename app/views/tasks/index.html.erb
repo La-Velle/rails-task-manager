@@ -5,3 +5,23 @@
     <li><%= task.title %> <%= task.details %></li>
    </ul>
 <%end %>
+
+<%= form_for @task do |f| %>
+<%= f.label :task %>
+<%= f.title_field :task %>
+<%= f.label :details %>
+<%= f.text_field :details %>
+<%= f.label :completed %>
+<%= f.text_field :completed %>
+
+<% end %>
+
+<form action="/tasks" method="post">
+<%#= hidden_field_tag :authenticity_token, form_authenticity_token/%>
+ <label for="task">Task</label>
+ <input type="title">Task=""</label>
+ <label for="details">Task</label>
+ <input type="text">Task=""</label>
+ <label for="completed">Task=""</label>
+ <input type="boolean">Task=default:false</label>
+</form>

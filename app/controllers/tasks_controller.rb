@@ -6,6 +6,7 @@ class TasksController < ApplicationController
   end
 
   def show
+    @task = task.find (params)
   end
 
   def new

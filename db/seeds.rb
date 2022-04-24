@@ -5,12 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-# puts "creating tasks"
-# Task.create title: 'gardening', details: 'plant edibles'
-# puts "tasks created"
-
-Task.create do
-  title: ''
-  details: ''
-end
